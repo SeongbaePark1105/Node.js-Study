@@ -1,7 +1,6 @@
 {
   "name": "node.js-study",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,6 @@
   "bugs": {
     "url": "https://github.com/SeongbaePark1105/Node.js-Study/issues"
   },
-  "homepage": "https://github.com/SeongbaePark1105/Node.js-Study#readme"
+  "homepage": "https://github.com/SeongbaePark1105/Node.js-Study#readme",
+  "description": ""
 }
