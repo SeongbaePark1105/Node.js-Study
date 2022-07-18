@@ -92,10 +92,13 @@ var app = http.createServer(function (request, response) {
       var post = qs.parse(body);
       var title = post.title;
       var description = post.description;
-      console.log(post.title);
+      fs.writeFile(`data/${title}`, description, 'utf-8', (err)=>{
+        if(err) throw err;
+        response.writeHead(302, {Location: `/?id=${title}`}); // 페이지 이동은 302, 위치 적으면 됨
+        response.end("");
+      })
     });
-    response.writeHead(200);
-    response.end("success");
+    
   }
 
    else {
